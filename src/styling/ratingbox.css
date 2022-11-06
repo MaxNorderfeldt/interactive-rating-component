@@ -1,35 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
-:root {
-  --white: hsl(0, 0%, 100%);
-  --light-grey: hsl(217, 12%, 63%);
-  --medium-grey: hsl(216, 12%, 54%);
-  --dark-blue: hsl(213, 19%, 18%);
-  --very-dark-blue: hsl(216, 12%, 8%);
-}
-
-body {
-  font-family: "Overpass", sans-serif;
-  background-color: var(--very-dark-blue);
-  font-style: normal;
-}
-
-main {
-  width: 412px;
-  height: 416px;
-  border-radius: 30px;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -49.1%);
-
-  background: radial-gradient(
-    98.96% 98.96% at 50% 0%,
-    #232a34 0%,
-    #181e27 100%
-  );
-}
-
 .circle {
   width: 51px;
   height: 51px;
@@ -37,25 +5,13 @@ main {
   background-color: #262e38;
 }
 
-p {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  color: var(--light-grey);
-
-  margin: 32px;
-  margin-bottom: 24px;
-  margin-top: 14px;
-}
-
 h1 {
-  color: var(--white);
-  font-weight: 700;
-  font-size: 28px;
   margin: 32px;
   margin-top: 30px;
+}
+
+#rating-header {
   margin-bottom: 15px;
-  line-height: 35px;
 }
 
 #star-image {
@@ -76,7 +32,7 @@ h1 {
 }
 
 #submit-button {
-  background: #fc7614;
+  background: var(--orange);
   border-radius: 22.5px;
   width: 341px;
   height: 45px;
@@ -84,19 +40,29 @@ h1 {
   font-weight: 700;
   font-size: 15px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 2px;
   color: var(--white);
   line-height: 40px;
 }
+#submit-button:hover {
+  background: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
 
+.number:focus {
+  background: var(--light-grey);
+  color: var(--white);
+}
+.number:hover {
+  background: var(--orange);
+  color: var(--white);
+}
 #five-circles {
   width: 341px;
   height: 51px;
-  font-weight: 400;
-  font-size: 16px;
+
   color: var(--light-grey);
-  text-align: center;
 
   display: inline-flex;
   justify-content: space-between;
@@ -109,6 +75,5 @@ h1 {
 .number {
   line-height: 51px;
   font-weight: 700;
-  font-size: 16px;
   color: var(--medium-grey);
 }

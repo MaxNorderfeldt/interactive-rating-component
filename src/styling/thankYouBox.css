@@ -1,0 +1,43 @@
+#illustration-image {
+  width: 162px;
+  height: 108px;
+  margin-top: 45px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rating-box {
+  width: 193px;
+  height: 32px;
+  margin: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  border-radius: 22.5px;
+  font-size: 15px;
+  line-height: 32px;
+}
+
+#rating-text {
+  position: absolute;
+  height: 24px;
+  left: 10.36%;
+  right: 9.84%;
+}
+
+#thank-you-text {
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+#thank-you-header {
+  height: 35px;
+  left: 45.07%;
+  right: 44.86%;
+  top: calc(50% - 35px / 2 + 61.5px);
+  margin-bottom: 15px;
+}

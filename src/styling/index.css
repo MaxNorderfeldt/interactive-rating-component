@@ -5,13 +5,12 @@ body {
 }
 
 main {
+  display: inline-block;
   width: 412px;
   height: 416px;
   border-radius: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: auto;
+
+  transform: translate(0, 50%);
 
   background: radial-gradient(
     98.96% 98.96% at 50% 0%,

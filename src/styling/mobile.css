@@ -1,0 +1,97 @@
+@media only screen and (max-width: 500px) {
+  * {
+    margin: 24px;
+  }
+
+  .circle {
+    width: 42px;
+    height: 42px;
+    margin: 0px;
+  }
+
+  #star-image {
+    top: -4px;
+    left: -3px;
+  }
+
+  h1 {
+    margin: 0px;
+    height: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 17px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0px;
+  }
+  main {
+    width: 327px;
+    height: 360px;
+  }
+  #star {
+    margin: 24px;
+    margin-bottom: 17px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #submit-button {
+    background: var(--orange);
+
+    width: 279px;
+    height: 45px;
+    font-size: 15px;
+    line-height: 19px;
+    margin: 24px;
+    margin-bottom: 32px;
+  }
+
+  #five-circles {
+    width: 281px;
+    height: 41px;
+    margin: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .number {
+    line-height: 42px;
+  }
+}
+
+#illustration-image {
+  width: 144px;
+  height: 96px;
+  margin-top: 34px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rating-box {
+  width: 168px;
+  height: 32px;
+  margin: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+#thank-you-header {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 24px;
+  margin-bottom: 10px;
+}
+
+#thank-you-text {
+  margin: 24px;
+  margin-top: 10px;
+  margin-bottom: 37px;
+}

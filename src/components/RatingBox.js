@@ -1,20 +1,17 @@
-import "../styling/index.css";
-import "../styling/ratingbox.css";
-
 import logo from "../images/icon-star.svg";
 import React, { useState, useRef } from "react";
 
 function RatingBox(props) {
   const setRating = props.setRating;
-  const tempRating = useRef(0);
+  const selectedRating = useRef(0);
 
   function handleClick(e) {
-    console.log("test");
-    tempRating.current = e.target.value;
+    selectedRating.current = e.target.value;
   }
 
   function handleSubmit() {
-    setRating(tempRating.current);
+    event.preventDefault();
+    setRating(selectedRating.current);
   }
   return (
     <main>
@@ -72,7 +69,8 @@ function RatingBox(props) {
           5
         </button>
       </div>
-      <button id="submit-button" onClick={handleSubmit}>
+      {/* onMouseDown is used to prevent the focus from changing */}
+      <button id="submit-button" onMouseDown={handleSubmit}>
         SUBMIT
       </button>
     </main>
